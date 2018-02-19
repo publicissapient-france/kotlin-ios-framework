@@ -1,0 +1,10 @@
+allprojects {
+    buildscript {
+        ext.kotlin_version = '1.2.21'
+        ext.konan_version = '0.6'
+
+        repositories {
+            jcenter()
+        }
+    }
+}
