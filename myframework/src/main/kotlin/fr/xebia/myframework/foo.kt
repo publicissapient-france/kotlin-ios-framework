@@ -1,5 +1,5 @@
 class Foo() {
-	fun bar(): String {
-		return "bar"
-	}
+    fun bar(): String {
+        return "bar"
+    }
 }
