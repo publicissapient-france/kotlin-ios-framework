@@ -1,5 +1,5 @@
+package fr.xebia.myframework
+
 class Foo() {
-    fun bar(): String {
-        return "bar"
-    }
+    fun bar() = "bar"
 }
