@@ -1,0 +1,24 @@
+apply plugin: 'konan'
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://dl.bintray.com/jetbrains/kotlin-native-dependencies'
+        }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:$konan_version"
+    }
+}
+
+konanArtifacts {
+    framework('KotlinMyFramework', targets: ['iphone', 'iphone_sim']) {
+        srcDir 'src/main/kotlin'
+
+        enableMultiplatform true
+    }
+}
+
+dependencies {
+    expectedBy project(':myframework')
+}

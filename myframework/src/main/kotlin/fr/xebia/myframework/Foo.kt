@@ -1,5 +1,5 @@
 package fr.xebia.myframework
 
-class Foo() {
-    fun bar() = "bar"
+expect class Foo() {
+    fun bar(): String
 }
