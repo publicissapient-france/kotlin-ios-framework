@@ -1,10 +1,9 @@
 allprojects {
     buildscript {
-        ext.kotlin_version = '1.2.30-eap-47'
+        ext.kotlin_version = '1.2.30'
         ext.konan_version = '0.6'
 
         repositories {
-            maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
             jcenter()
         }
     }
