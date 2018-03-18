@@ -17,8 +17,18 @@ konanArtifacts {
 
         enableMultiplatform true
     }
+
+    program('nativeTest') {
+        srcDir 'src/main/kotlin'
+        commonSourceSets 'main', 'test'
+
+        enableMultiplatform true
+        extraOpts '-tr'
+    }
 }
 
 dependencies {
     expectedBy project(':myframework')
 }
+
+task test(dependsOn: run)
